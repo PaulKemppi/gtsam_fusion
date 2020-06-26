@@ -1,0 +1,17 @@
+<robot name="sample_robot">
+  <link name="base_frame" />
+  <link name="imu_gyro" />
+  <link name="gps" />
+
+  <joint name="base_frame_imu_gyro" type="fixed">
+    <parent link="base_frame"/>
+    <child link="imu_gyro"/>
+    <origin xyz="0.29 -0.15622 0.40" rpy="0 0 0" />
+  </joint>
+
+  <joint name="base_frame_gps" type="fixed">
+    <parent link="base_frame"/>
+    <child link="gps"/>
+    <origin xyz="231.52e-3 -143.94e-3 0.4275" rpy="0 0 0" />
+  </joint>
+</robot>

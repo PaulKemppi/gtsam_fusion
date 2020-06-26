@@ -1,0 +1,20 @@
+<launch>
+  <param name="urdf_file" textfile="$(find gtsam_fusion)/urdf/robot.urdf" />
+  <arg name="bag_file_path" />
+  
+   <!-- GTSAM fusion combining IMU and GPS -->
+  <node name="gtsam_fusion" pkg="gtsam_fusion" type="gtsam_fusion_ros.py" output="screen" required="true">
+    <param name="bag_file_path" value="$(arg bag_file_path)" />
+    <param name="gps_topic" value="/gps/fix" />
+    <param name="imu_topic" value="/roveo_mid_imu/sensor_imu" />
+    <param name="gps_interval" value="0.5" />
+    <param name="use_pose" value="false" />
+    <param name="use_gps" value="true" />
+    <param name="plot_results" value="true" />
+  </node>
+
+  <!-- Robot state publisher resposible of publishing the static transforms -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <remap from="robot_description" to="urdf_file" />
+  </node>
+</launch>
