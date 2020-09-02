@@ -11,7 +11,7 @@ Estimates pose, velocity, and accelerometer / gyroscope biases by fusing GPS pos
 
 # Installation (ROS Melodic)
 
-As this module is implementd using python3 and ROS Melodic uses python2 by default, few steps need to be taken to be able to run python3 code. This installation assumes that ROS Melodic is already installed on a PC running Ubuntu 18.04LTS
+As this module is implemented using python3 and ROS Melodic uses python2 by default, few steps need to be taken to be able to run python3 code. This installation assumes that ROS Melodic is already installed on a PC running Ubuntu 18.04LTS
 
 Install the required dependencies
 
