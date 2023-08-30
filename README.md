@@ -85,7 +85,7 @@ source ~/python3_ws/install/setup.zsh --extend
 
 ## GPS & IMU FUSION offline via rosbag API
 
-Download the sample bag file from: [gtsam_fusion.bag](https://vtt.sharefile.eu/d-s9c04cbcea9c4a14a)
+Download the sample bag file from: [gtsam_fusion.bag](https://vtt.sharefile.eu/d-scab79b3d31a04cf3921b1a44b6f29f5d)
 
 Launch the node giving the bag file path as input argument:
 
