@@ -85,7 +85,7 @@ source ~/python3_ws/install/setup.zsh --extend
 
 ## GPS & IMU FUSION offline via rosbag API
 
-Download the sample bag file from: [gtsam_fusion.bag](https://vtt.sharefile.eu/d-saad74fab64404cd7902a8d79414c5af9)
+Download the sample bag file from: [gtsam_fusion.bag](https://drive.google.com/file/d/1T4VIq5pF9h8T_Cae2iZ1JVVTC1MZtTT-/view?usp=sharing)
 
 Launch the node giving the bag file path as input argument:
 
@@ -97,7 +97,7 @@ The bag file will be processed via rosbag API and the fusion results will be plo
 
 ## 6DOF POSE & IMU FUSION offline via rosbag API
 
-Download the sample bag file from: [gtsam_fusion.bag](https://vtt.sharefile.eu/d-saad74fab64404cd7902a8d79414c5af9)
+Download the sample bag file from: [gtsam_fusion.bag](https://drive.google.com/file/d/1T4VIq5pF9h8T_Cae2iZ1JVVTC1MZtTT-/view?usp=sharing)
 
 Launch the node giving the bag file path as input argument:
 
